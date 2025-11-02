@@ -2,7 +2,7 @@ import React from "react";
 
 import { createBrowserRouter } from "react-router";
 import RootLayout from "../Layouts/RootLayout";
-import Home from "../Pages/Home";
+import Home from "../Pages/Home/Home";
 import Destination from "../Pages/Destination";
 import Packages from "../Pages/Packages";
 import Gallery from "../Pages/Gallery";

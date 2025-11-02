@@ -54,7 +54,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
-            daisyUI
+          Trip Haven
           </Link>
         </div>
 
