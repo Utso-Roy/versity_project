@@ -85,7 +85,7 @@ const TravelTipsSection = () => {
         <MdOutlineTravelExplore className="text-[#00A4BB] text-9xl" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="w-full relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">

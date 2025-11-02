@@ -27,7 +27,7 @@ const PopularDestinations = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-blue-50 via-white to-blue-100">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="w-full px-6 text-center">
         {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

@@ -53,7 +53,7 @@ const CustomerTestimonials = () => {
         <FaMapLocationDot className="text-[#00A4BB] text-8xl" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="w-full  relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-block mb-4">

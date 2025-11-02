@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineTravelExplore } from "react-icons/md";
 import { Link } from "react-router";
 
 const Navbar = () => {
@@ -54,6 +55,8 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
+                          <MdOutlineTravelExplore className="text-4xl text-[#00A4BB]" />
+            
           Trip Haven
           </Link>
         </div>

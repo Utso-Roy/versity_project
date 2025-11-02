@@ -52,7 +52,7 @@ const NewsletterSubscribeSection = () => {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="w-full  relative z-10">
         {/* Main Content Card */}
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-gray-200">
           <div className="grid md:grid-cols-2 gap-0">

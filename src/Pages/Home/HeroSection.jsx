@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-200/20 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
 
       {/* Main Container */}
-      <div className="relative w-full px-5 lg:px-20 py-12 sm:py-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 max-w-7xl mx-auto">
+      <div className="relative w-full px-5 lg:px-6 py-12 sm:py-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 max-w-7xl mx-auto">
         {/* Left Column */}
         <div className="lg:w-1/2 flex flex-col justify-center space-y-8 lg:space-y-10">
           {/* Badge */}
@@ -100,7 +100,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Column */}
-        <div className="lg:w-1/2 w-full relative">
+        <div className="lg:w-2/5 w-full relative">
           {/* Main Hero Image */}
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl opacity-70"></div>
