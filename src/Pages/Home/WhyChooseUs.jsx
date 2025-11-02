@@ -32,9 +32,14 @@ const WhyChooseUs = () => {
       <div className="absolute -bottom-10 -right-10 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl"></div>
 
       <div className="w-full px-6 text-center relative z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[#00A4BB] mb-12">
-          কেন আমাদের নির্বাচন করবেন?
-        </h2>
+       <h2 className="text-4xl md:text-5xl font-extrabold text-gray-700 mb-4">
+  কেন আমাদের <span className="text-[#00A4BB]">নির্বাচন করবেন?</span>
+</h2>
+<p className="text-gray-600 max-w-2xl mx-auto text-lg mb-12">
+  আমাদের অভিজ্ঞতা, নিরাপদ সেবা, এবং কাস্টমাইজড প্যাকেজের মাধ্যমে আপনি পাবেন 
+  অসাধারণ ভ্রমণ অভিজ্ঞতা, যা বাজেটের মধ্যে থাকবে এবং আপনার সময় বাঁচাবে।
+</p>
+
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, i) => (

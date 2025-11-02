@@ -39,19 +39,19 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-[#00A4BB]">দ্রুত লিংক</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">হোম</a>
+                <a href="/" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">হোম</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">আমাদের সম্পর্কে</a>
+                <a href="/about" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">আমাদের সম্পর্কে</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">ট্যুর প্যাকেজ</a>
+                <a href="/packages" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">ট্যুর প্যাকেজ</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">গ্যালারি</a>
+                <a href="/gallery" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">গ্যালারি</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">যোগাযোগ</a>
+                <a href="/contact" className="text-gray-400 hover:text-[#00A4BB] transition-colors duration-300">যোগাযোগ</a>
               </li>
             </ul>
           </div>

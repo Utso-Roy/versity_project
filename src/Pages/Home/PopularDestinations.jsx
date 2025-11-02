@@ -35,8 +35,20 @@ const PopularDestinations = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-extrabold mb-12 text-[#00A4BB]"
         >
-         জনপ্রিয় গন্তব্য
-        </motion.h2>
+                  জনপ্রিয় গন্তব্য
+                  
+                  <motion.p
+  initial={{ opacity: 0, y: 10 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  className="text-gray-500 max-w-2xl mx-auto text-lg mb-10"
+>
+  বাংলাদেশে ভ্রমণের জন্য সেরা গন্তব্যগুলো এখানে আবিষ্কার করুন। 
+  অসাধারণ প্রকৃতি, শান্ত পরিবেশ, এবং স্মরণীয় অভিজ্ঞতা আপনার অপেক্ষায়।
+</motion.p>
+              </motion.h2>
+              
+              
 
         {/* Destination Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
