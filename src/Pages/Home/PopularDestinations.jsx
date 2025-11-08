@@ -41,7 +41,7 @@ const PopularDestinations = () => {
   initial={{ opacity: 0, y: 10 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.2 }}
-  className="text-gray-500 max-w-2xl mx-auto text-lg mb-10"
+  className="text-gray-600 max-w-2xl mx-auto text-sm mb-10"
 >
   বাংলাদেশে ভ্রমণের জন্য সেরা গন্তব্যগুলো এখানে আবিষ্কার করুন। 
   অসাধারণ প্রকৃতি, শান্ত পরিবেশ, এবং স্মরণীয় অভিজ্ঞতা আপনার অপেক্ষায়।
