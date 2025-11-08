@@ -1,6 +1,8 @@
 import React from "react";
 import CountUp from "react-countup";
 import { Link } from "react-router";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const HeroSection = () => {
   return (
@@ -24,10 +26,7 @@ const HeroSection = () => {
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-gray-700 leading-tight">
             আবিষ্কার করুন{" "}
-                      <span className="text-[#00A4BB]">
-                      সৌন্দর্য
-                      </span> 
-{" "}
+            <span className="text-[#00A4BB]">সৌন্দর্য</span>{" "}
             বাংলাদেশে
           </h1>
 
@@ -40,82 +39,74 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 sm:gap-5">
-                      <Link to="/tour">
-                      
-                      
-                       <button className="group  cursor-pointer relative px-8 sm:px-10 py-3.5 bg-[#00A4BB] text-white rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-              <div className="absolute inset-0 bg-[#00A4BB] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative flex  items-center gap-2">
-                ট্যুর বুক করুন
+            <Link to="/tour">
+              <button className="group cursor-pointer relative px-8 sm:px-10 py-3.5 bg-[#00A4BB] text-white rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+                <div className="absolute inset-0 bg-[#00A4BB] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="relative flex items-center gap-2">
+                  ট্যুর বুক করুন
+                  <svg
+                    className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </Link>
+
+            <Link to="/tourStory">
+              <button className="group cursor-pointer px-8 sm:px-10 py-3.5 bg-white/80 backdrop-blur-sm border border-gray-300 text-gray-800 rounded-xl font-semibold hover:bg-white hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                গল্প দেখুন
                 <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
+                  className="w-4 h-4 group-hover:scale-110 transition-transform"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
+                  <path d="M8 5v14l11-7z" />
                 </svg>
-              </span>
-            </button></Link>
-                      <Link to='/tourStory'>
-                      
-                      
-                      
-                       <button className="group cursor-pointer px-8 sm:px-10 py-3.5 bg-white/80 backdrop-blur-sm border border-gray-300 text-gray-800 rounded-xl font-semibold hover:bg-white hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
-              গল্প দেখুন
-              <svg
-                className="w-4 h-4 group-hover:scale-110 transition-transform"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
-                      </Link>
+              </button>
+            </Link>
           </div>
 
           {/* Stats Cards */}
-          <div className="flex flex-wrap gap-6 pt-4 ">
-            <div className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200 flex flex-col items-center transition-transform hover:scale-105 duration-300">
-              <div className="text-3xl sm:text-4xl font-bold text-gray-900">
-                <CountUp end={500} duration={2} separator="," />+
+          <div className="flex flex-wrap gap-6 pt-4">
+            {[
+              { end: 500, label: "সম্পন্ন ট্যুর", suffix: "+" },
+              { end: 98, label: "সন্তুষ্ট ভ্রমণকারী", suffix: "%" },
+              { end: 50, label: "গন্তব্য", suffix: "+" },
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200 flex flex-col items-center transition-transform hover:scale-105 duration-300"
+              >
+                <div className="text-3xl sm:text-4xl font-bold text-gray-900">
+                  <CountUp end={stat.end} duration={2} separator="," />
+                  {stat.suffix}
+                </div>
+                <div className="text-gray-600 text-sm mt-2 text-center">
+                  {stat.label}
+                </div>
               </div>
-              <div className="text-gray-600 text-sm mt-2 text-center">
-                সম্পন্ন ট্যুর
-              </div>
-            </div>
-            <div className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200 flex flex-col items-center transition-transform hover:scale-105 duration-300">
-              <div className="text-3xl sm:text-4xl font-bold text-gray-900">
-                <CountUp end={98} duration={2} suffix="%" />
-              </div>
-              <div className="text-gray-600 text-sm mt-2 text-center">
-                সন্তুষ্ট ভ্রমণকারী
-              </div>
-            </div>
-            <div className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200 flex flex-col items-center transition-transform hover:scale-105 duration-300">
-              <div className="text-3xl sm:text-4xl font-bold text-gray-900">
-                <CountUp end={50} duration={2} />+
-              </div>
-              <div className="text-gray-600 text-sm mt-2 text-center">
-                গন্তব্য
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
         {/* Right Column */}
-        <div className="lg:w-2/5 w-full relative">
-          {/* Main Hero Image */}
+        <div className="lg:w-2/6 w-full relative">
+          {/* Main Hero Image with Lazy Load */}
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl opacity-70"></div>
-            <img
+            <LazyLoadImage
               src="https://i.ibb.co/Kx0XWmvf/julien-gaud-MFsc-Wuh40-Kg-unsplash.jpg"
               alt="Beautiful landscape of Bangladesh"
+              effect="blur"
               className="relative w-full h-[300px] sm:h-[400px] lg:h-[450px] xl:h-[500px] rounded-2xl shadow-2xl object-cover z-10"
             />
 
@@ -165,9 +156,7 @@ const HeroSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">
-                    নিরাপদ ভ্রমণ
-                  </div>
+                  <div className="font-semibold text-gray-900">নিরাপদ ভ্রমণ</div>
                   <div className="text-xs text-gray-600">
                     আপনার নিরাপত্তা প্রথমে
                   </div>
@@ -176,7 +165,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Image Gallery Grid */}
           <div className="grid grid-cols-3 gap-4 mt-8">
             {[
               "https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=400&q=80",
@@ -188,6 +176,7 @@ const HeroSection = () => {
                 <img
                   src={src}
                   alt={`Tour ${index + 1}`}
+                  effect="blur"
                   className="w-full h-20 sm:h-24 md:h-28 rounded-xl object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
