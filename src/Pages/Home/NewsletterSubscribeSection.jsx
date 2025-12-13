@@ -3,6 +3,7 @@ import { FaEnvelope, FaPaperPlane, FaCheckCircle, FaGift } from 'react-icons/fa'
 import { MdOutlineTravelExplore, MdDiscount } from 'react-icons/md';
 import { IoAirplaneSharp, IoNotifications } from 'react-icons/io5';
 import { BiSolidOffer } from 'react-icons/bi';
+import Container from '../../Container/Container';
 
 const NewsletterSubscribeSection = () => {
   const [email, setEmail] = useState('');
@@ -52,7 +53,10 @@ const NewsletterSubscribeSection = () => {
         </div>
       </div>
 
-      <div className="w-full  relative z-10">
+      <Container>
+        
+
+         <div className="w-full  relative z-10">
         {/* Main Content Card */}
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-gray-200">
           <div className="grid md:grid-cols-2 gap-0">
@@ -244,6 +248,7 @@ const NewsletterSubscribeSection = () => {
           </div>
         </div>
       </div>
+     </Container>
     </div>
   );
 };

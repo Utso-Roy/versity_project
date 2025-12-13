@@ -4,6 +4,7 @@ import { MdOutlineTravelExplore } from 'react-icons/md';
 import { IoAirplaneSharp } from 'react-icons/io5';
 import { FaMapLocationDot } from 'react-icons/fa6';
 import CountUp from 'react-countup';
+import Container from '../../Container/Container';
 
 const CustomerTestimonials = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -44,7 +45,7 @@ const CustomerTestimonials = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-20 px-4 overflow-hidden relative">
+    <div className=" bg-gray-50 py-20 px-4 overflow-hidden relative">
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 opacity-5">
         <IoAirplaneSharp className="text-[#00A4BB] text-8xl rotate-45" />
@@ -53,7 +54,9 @@ const CustomerTestimonials = () => {
         <FaMapLocationDot className="text-[#00A4BB] text-8xl" />
       </div>
 
-      <div className="w-full  relative z-10">
+      <Container>
+        
+         <div className="w-full  relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-block mb-4">
@@ -145,6 +148,7 @@ const CustomerTestimonials = () => {
           ))}
         </div>
       </div>
+     </Container>
     </div>
   );
 };

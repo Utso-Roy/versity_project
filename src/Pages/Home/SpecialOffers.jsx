@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import { MdLocalOffer } from "react-icons/md";
+import Container from "../../Container/Container";
 
 const SpecialOffers = () => {
   const offers = [
@@ -36,7 +37,10 @@ const SpecialOffers = () => {
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="w-full px-6 text-center">
+      <Container>
+
+
+        <div className="w-full px-6 text-center">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#00A4BB]  mb-4">
            <span className="text-[#00A4BB]">শীতকালীন প্যাকেজে</span> পাচ্ছেন{" "}
@@ -91,6 +95,7 @@ const SpecialOffers = () => {
           ))}
         </div>
       </div>
+      </Container>
     </section>
   );
 };

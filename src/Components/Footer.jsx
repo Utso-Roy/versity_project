@@ -1,12 +1,16 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlineTravelExplore } from 'react-icons/md';
+import Container from "../Container/Container";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <Container>
+        
+
+           <div className=" px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
           {/* Company Info */}
@@ -123,6 +127,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+   </Container>
     </footer>
   );
 };

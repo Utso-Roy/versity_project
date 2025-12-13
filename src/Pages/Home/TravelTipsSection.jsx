@@ -3,6 +3,7 @@ import { FaPassport, FaUmbrellaBeach, FaFirstAid, FaCamera, FaMoneyBillWave, FaM
 import { MdOutlineTravelExplore, MdLuggage } from 'react-icons/md';
 import { IoAirplaneSharp } from 'react-icons/io5';
 import { Link } from 'react-router';
+import Container from '../../Container/Container';
 
 const TravelTipsSection = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -86,7 +87,10 @@ const TravelTipsSection = () => {
         <MdOutlineTravelExplore className="text-[#00A4BB] text-9xl" />
       </div>
 
-      <div className="w-full relative z-10">
+      <Container>
+
+
+        <div className="w-full relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
@@ -171,6 +175,7 @@ const TravelTipsSection = () => {
           </div>
         </div>
       </div>
+      </Container>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaClock, FaPlane, FaMoneyBillWave, FaShieldAlt } from "react-icons/fa";
+import Container from "../../Container/Container";
 
 const WhyChooseUs = () => {
   const features = [
@@ -31,7 +32,9 @@ const WhyChooseUs = () => {
       <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-10 -right-10 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl"></div>
 
-      <div className="w-full px-6 text-center relative z-10">
+      <Container>
+        
+         <div className="w-full px-6 text-center relative z-10">
        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-700 mb-4">
   কেন আমাদের <span className="text-[#00A4BB]">নির্বাচন করবেন?</span>
 </h2>
@@ -54,6 +57,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
       </div>
+     </Container>
     </section>
   );
 };

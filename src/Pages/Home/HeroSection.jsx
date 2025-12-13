@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { Link } from "react-router";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import Container from "../../Container/Container";
 
 const HeroSection = () => {
   return (
@@ -11,8 +12,11 @@ const HeroSection = () => {
       <div className="absolute top-20 right-20 w-72 h-72 bg-[#00A4BB]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
 
-      {/* Main Container */}
-      <div className="relative w-full px-4 sm:px-6 lg:px-8 py-20 lg:py-20">
+
+      <Container>
+        
+
+         <div className="relative  px-4 sm:px-6 lg:px-8 py-20 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           {/* Left Column - Text Content */}
@@ -202,6 +206,8 @@ const HeroSection = () => {
 
         </div>
       </div>
+     </Container>
+     
     </div>
   );
 };

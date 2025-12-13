@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router"; 
 import { MdOutlineTravelExplore } from "react-icons/md";
+import Container from "../Container/Container";
 
 const Navbar = () => {
   const links = (
@@ -69,8 +70,12 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
-      <div className="navbar-start">
+    <div className=" bg-base-100 ">
+      <Container>
+        
+
+         <div className="navbar">
+          <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -105,6 +110,8 @@ const Navbar = () => {
           Login
         </Link>
       </div>
+    </div>
+     </Container>
     </div>
   );
 };

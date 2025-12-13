@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Container from "../../Container/Container";
 
 const PopularDestinations = () => {
   const destinations = [
@@ -27,7 +28,7 @@ const PopularDestinations = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-blue-50 via-white to-blue-100">
-      <div className="w-full px-6 text-center">
+      <div className="w-full  text-center">
         {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -48,10 +49,9 @@ const PopularDestinations = () => {
 </motion.p>
               </motion.h2>
               
-              
-
-        {/* Destination Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <Container>
+          
+ <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
           {destinations.map((dest, i) => (
             <motion.div
               key={i}
@@ -73,6 +73,11 @@ const PopularDestinations = () => {
           ))}
         </div>
 
+
+              </Container>
+
+        {/* Destination Grid */}
+       
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
