@@ -43,19 +43,19 @@ const AboutUs = () => {
         {
             name: 'ফরহাদ হোসেন লাম',
             position: 'ভ্রমণ পরিচালক',
-            image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
+            image: 'https://i.ibb.co.com/VpC4rdQy/lam.jpg',
             description: 'দেশ-বিদেশের ১০০+ গন্তব্যে ভ্রমণ অভিজ্ঞতা'
         },
         {
             name: 'মাহাবুব আলম জনি',
             position: 'কাস্টমার সাপোর্ট হেড',
-            image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80',
+            image: 'https://i.ibb.co.com/rG8Fjnsj/jony.jpg',
             description: 'গ্রাহক সেবায় বিশেষজ্ঞ'
         },
         {
             name: 'অন্তরীপ',
             position: 'মার্কেটিং ম্যানেজার',
-            image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80',
+            image: 'https://i.ibb.co.com/JwnrQSfN/antoreep-2.jpg',
             description: 'ডিজিটাল মার্কেটিং স্পেশালিস্ট'
         }
     ];
