@@ -2,6 +2,7 @@ import React from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import { MdLocalOffer } from "react-icons/md";
 import Container from "../../Container/Container";
+import { Link } from "react-router";
 
 const SpecialOffers = () => {
   const offers = [
@@ -86,9 +87,12 @@ const SpecialOffers = () => {
                   <span className="text-xl font-bold text-[#007C94]">
                     {offer.price}
                   </span>
-                  <button className="px-4 py-2 bg-[#00A4BB] text-white rounded-lg font-semibold hover:bg-[#0092A7] transition-all duration-300">
+                  <Link to="/tour" >
+                  
+                  <button className="px-4 cursor-pointer py-2 bg-[#00A4BB] text-white rounded-lg font-semibold hover:bg-[#0092A7] transition-all duration-300">
                     এখনই বুক করুন
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
