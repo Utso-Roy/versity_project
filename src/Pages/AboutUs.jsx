@@ -49,7 +49,7 @@ const AboutUs = () => {
         {
             name: 'মাহাবুব আলম জনি',
             position: 'কাস্টমার সাপোর্ট হেড',
-            image: 'https://i.ibb.co.com/rG8Fjnsj/jony.jpg',
+            image: 'https://i.ibb.co.com/jP9jHd3Z/jony-2.jpg',
             description: 'গ্রাহক সেবায় বিশেষজ্ঞ'
         },
         {
